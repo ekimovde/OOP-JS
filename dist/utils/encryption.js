@@ -9,7 +9,6 @@ exports.replaceFunc = function (tmp) {
   var text = tmp[1].split("");
   var replaceText = tmp[2].split("").join("");
   var replacement = [];
-  console.log(replaceText);
 
   for (var i = 0; i < text.length; i++) {
     var el = "[" + text[i] + "->" + replaceText[i] + "]";

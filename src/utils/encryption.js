@@ -8,8 +8,6 @@ exports.replaceFunc = (tmp) => {
   let replaceText = tmp[2].split("").join("");
   let replacement = [];
 
-  console.log(replaceText);
-
   for (let i = 0; i < text.length; i++) {
     let el = "[" + text[i] + "->" + replaceText[i] + "]";
     replacement.push(el);
