@@ -1,0 +1,8 @@
+Start!
+Container contains: 4, elements!
+Text: Абв, Replacement: [А->б]-[б->в]-[в->г], DecodedText: бвг
+Text: abc, Shift: 1, DecodedText: bcd
+Text: Кот, Replacement: [К->Д]-[о->о]-[т->м], DecodedText: Дом
+Text: Кот, Shift: 2, DecodedText: Мрф
+Container contains: 0, elements!
+Stop!
