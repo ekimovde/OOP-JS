@@ -9,6 +9,7 @@ export const inFunc = (tmp, setText, array) => {
 
       setText = replacement;
       setText.setText(tmp.split(" ")[1].replace(/\r/g, ""));
+      setText.setName(tmp.split(" ")[2].replace(/\r/g, ""));
       array.push(replacement);
 
       break;
@@ -18,6 +19,7 @@ export const inFunc = (tmp, setText, array) => {
 
       setText = shift;
       setText.setText(tmp.split(" ")[1]);
+      setText.setName(tmp.split(" ")[2]);
       array.push(shift);
 
       break;
