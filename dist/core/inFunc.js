@@ -12,8 +12,6 @@ var Shift = require("./Shift");
 var ReplaceNumber = require("./ReplaceNumber");
 
 var inFunc = function inFunc(tmp, setText, array) {
-  console.log(tmp);
-
   switch (tmp[0]) {
     case "1":
       var replacement = new Replacement();

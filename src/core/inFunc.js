@@ -3,8 +3,6 @@ const Shift = require("./Shift");
 const ReplaceNumber = require("./ReplaceNumber");
 
 export const inFunc = (tmp, setText, array) => {
-  console.log(tmp);
-
   switch (tmp[0]) {
     case "1":
       let replacement = new Replacement();
