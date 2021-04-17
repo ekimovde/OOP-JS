@@ -1,5 +1,6 @@
 let SetText = require("./core/SetText");
 import { inFunc } from "./core/inFunc";
+import { compare } from "./utils/compare";
 
 class Container {
   constructor() {
@@ -29,6 +30,19 @@ class Container {
       for (let i = 0; i < c; i++) {
         this.array[i].out(writer);
       }
+  }
+
+  sort() {
+    let c = this.array.length;
+    let setText = new SetText();
+
+    this.array.sort((a, b) => {
+      if (compare(setText, a.text, b.text)) {
+        return 1;
+      } else {
+        return -1;
+      }
+    });
   }
 
   clear() {

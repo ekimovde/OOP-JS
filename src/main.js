@@ -13,6 +13,7 @@ function main() {
   let reader = new Reader("in.txt");
 
   container.in(reader);
+  container.sort();
   container.out(writer);
   container.clear();
   container.out(writer);
