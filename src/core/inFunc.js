@@ -1,5 +1,6 @@
 const Replacement = require("./Replacement");
 const Shift = require("./Shift");
+const ReplaceNumber = require("./ReplaceNumber");
 
 export const inFunc = (tmp, setText, array) => {
   switch (tmp[0]) {
@@ -19,6 +20,15 @@ export const inFunc = (tmp, setText, array) => {
       setText = shift;
       setText.setText(tmp.split(" ")[1]);
       array.push(shift);
+
+      break;
+    case "3":
+      let replaceNumber = new ReplaceNumber();
+      replaceNumber.in(tmp.toString().split(" "));
+
+      setText = replaceNumber;
+      setText.setText(tmp.split(" ")[1].replace(/\r/g, ""));
+      array.push(replaceNumber);
 
       break;
     default:

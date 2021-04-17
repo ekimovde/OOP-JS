@@ -9,6 +9,8 @@ var Replacement = require("./Replacement");
 
 var Shift = require("./Shift");
 
+var ReplaceNumber = require("./ReplaceNumber");
+
 var inFunc = function inFunc(tmp, setText, array) {
   switch (tmp[0]) {
     case "1":
@@ -25,6 +27,14 @@ var inFunc = function inFunc(tmp, setText, array) {
       setText = shift;
       setText.setText(tmp.split(" ")[1]);
       array.push(shift);
+      break;
+
+    case "3":
+      var replaceNumber = new ReplaceNumber();
+      replaceNumber["in"](tmp.toString().split(" "));
+      setText = replaceNumber;
+      setText.setText(tmp.split(" ")[1].replace(/\r/g, ""));
+      array.push(replaceNumber);
       break;
 
     default:
