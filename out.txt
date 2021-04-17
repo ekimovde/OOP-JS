@@ -1,6 +1,6 @@
 Start!
 Container contains: 5, elements!
-Text: Ко, Name: Dog, Length: 2, Replacement: [К->Д]-[о->о], DecodedText: До
+Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
 Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
 Container contains: 0, elements!
 Stop!
