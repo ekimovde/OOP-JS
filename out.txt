@@ -1,8 +1,8 @@
 Start!
 Container contains: 4, elements!
-Text: Абв, Length: 3, Replacement: [А->б]-[б->в]-[в->г], DecodedText: бвг
-Text: abc, Length: 3, Shift: 1, DecodedText: bcd
 Text: Коты, Length: 4, Replacement: [К->Д]-[о->о]-[т->м]-[ы->а], DecodedText: Дома
 Text: Кот, Length: 3, Shift: 2, DecodedText: Мрф
+Text: abc, Length: 3, Shift: 1, DecodedText: bcd
+Text: Абв, Length: 3, Replacement: [А->б]-[б->в]-[в->г], DecodedText: бвг
 Container contains: 0, elements!
 Stop!
