@@ -28,7 +28,9 @@ class Container {
 
     if (c > 0)
       for (let i = 0; i < c; i++) {
-        this.array[i].out(writer);
+        if (this.filter(this.array, i)) {
+          this.array[i].out(writer);
+        }
       }
   }
 
@@ -43,6 +45,12 @@ class Container {
         return -1;
       }
     });
+  }
+
+  filter(array, i) {
+    if (Object.keys(array[i])[0] === "replacement") {
+      return true;
+    }
   }
 
   clear() {
