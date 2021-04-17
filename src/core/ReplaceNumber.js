@@ -4,14 +4,14 @@ let { replaceNumberFunc } = require("../utils/encryption");
 class ReplaceNumber extends SetText {
   constructor() {
     super();
-    this.replacement;
+    this.replaceNumber;
     this.decodedText;
   }
 
   in(tmp) {
     const { replacement, replaceText } = replaceNumberFunc(tmp);
 
-    this.replacement = replacement.join("-");
+    this.replaceNumber = replacement.join("-");
     this.decodedText = replaceText;
   }
 
@@ -19,7 +19,7 @@ class ReplaceNumber extends SetText {
     super.out(writer);
 
     writer.writeLine(
-      `ReplaceNumber: ${this.replacement}, DecodedText: ${this.decodedText}`
+      `ReplaceNumber: ${this.replaceNumber}, DecodedText: ${this.decodedText}`
     );
   }
 }

@@ -46,13 +46,6 @@ var Container = /*#__PURE__*/function () {
       }
     }
   }, {
-    key: "filter",
-    value: function filter(array, i) {
-      if (Object.keys(array[i])[0] === "replacement") {
-        return true;
-      }
-    }
-  }, {
     key: "sort",
     value: function sort() {
       var c = this.array.length;
@@ -64,6 +57,13 @@ var Container = /*#__PURE__*/function () {
           return -1;
         }
       });
+    }
+  }, {
+    key: "filter",
+    value: function filter(array, i) {
+      if (Object.keys(array[i])[0] === "replacement") {
+        return true;
+      }
     }
   }, {
     key: "clear",

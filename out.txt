@@ -1,9 +1,6 @@
 Start!
 Container contains: 5, elements!
-Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
 Text: Ко, Name: Dog, Length: 2, Replacement: [К->Д]-[о->о], DecodedText: До
 Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
-Text: гl, Name: Denis, Length: 2, ReplaceNumber: [г->5]-[l->3], DecodedText: 53
-Text: Ж, Name: Cat, Length: 1, ReplaceNumber: [Ж->1], DecodedText: 1
 Container contains: 0, elements!
 Stop!
