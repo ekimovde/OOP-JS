@@ -1,7 +1,5 @@
 "use strict";
 
-var _lengthText = require("../utils/lengthText");
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -21,9 +19,14 @@ var SetText = /*#__PURE__*/function () {
       this.text = text;
     }
   }, {
+    key: "setLengthText",
+    value: function setLengthText(text) {
+      return text.length;
+    }
+  }, {
     key: "out",
     value: function out(writer) {
-      var len = (0, _lengthText.lengthText)(this.text);
+      var len = this.setLengthText(this.text);
       writer.write("Text: ".concat(this.text, ", Length: ").concat(len, ", "));
     }
   }]);

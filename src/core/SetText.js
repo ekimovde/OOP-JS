@@ -1,5 +1,3 @@
-import { lengthText } from "../utils/lengthText";
-
 class SetText {
   constructor() {
     this.text;
@@ -9,8 +7,12 @@ class SetText {
     this.text = text;
   }
 
+  setLengthText(text) {
+    return text.length;
+  }
+
   out(writer) {
-    let len = lengthText(this.text);
+    let len = this.setLengthText(this.text);
 
     writer.write(`Text: ${this.text}, Length: ${len}, `);
   }
