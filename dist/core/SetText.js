@@ -20,6 +20,11 @@ var SetText = /*#__PURE__*/function () {
       this.text = text;
     }
   }, {
+    key: "setLengthText",
+    value: function setLengthText(text) {
+      return text.length;
+    }
+  }, {
     key: "setName",
     value: function setName(name) {
       this.name = name;
@@ -27,7 +32,8 @@ var SetText = /*#__PURE__*/function () {
   }, {
     key: "out",
     value: function out(writer) {
-      writer.write("Text: ".concat(this.text, ", Name: ").concat(this.name, ", "));
+      var len = this.setLengthText(this.text);
+      writer.write("Text: ".concat(this.text, ", Name: ").concat(this.name, ", Length: ").concat(len, ", "));
     }
   }]);
 

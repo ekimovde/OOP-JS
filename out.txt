@@ -1,10 +1,10 @@
 Start!
 Container contains: 6, elements!
-Text: где, Length: 3, ReplaceNumber: [г->5]-[д->6]-[е->3], DecodedText: 563
-Text: Абв, Length: 3, Replacement: [А->б]-[б->в]-[в->г], DecodedText: бвг
-Text: abcs, Length: 4, Shift: 1, DecodedText: bcdt
-Text: Ко, Length: 2, Replacement: [К->Д]-[о->о], DecodedText: До
-Text: Кот, Length: 3, Shift: 2, DecodedText: Мрф
-Text: Жуse, Length: 4, ReplaceNumber: [Ж->1]-[у->2]-[s->3]-[e->3], DecodedText: 1233
+Text: где, Name: Denis, Length: 3, ReplaceNumber: [г->5]-[д->6]-[е->3], DecodedText: 563
+Text: Абв, Name: Vlad, Length: 3, Replacement: [А->б]-[б->в]-[в->г], DecodedText: бвг
+Text: abcs, Name: Vadim, Length: 4, Shift: 1, DecodedText: bcdt
+Text: Ко, Name: Dog, Length: 2, Replacement: [К->Д]-[о->о], DecodedText: До
+Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
+Text: Жуse, Name: Cat, Length: 4, ReplaceNumber: [Ж->1]-[у->2]-[s->3]-[e->3], DecodedText: 1233
 Container contains: 0, elements!
 Stop!
