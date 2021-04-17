@@ -19,9 +19,15 @@ var SetText = /*#__PURE__*/function () {
       this.text = text;
     }
   }, {
+    key: "setLengthText",
+    value: function setLengthText(text) {
+      return text.length;
+    }
+  }, {
     key: "out",
     value: function out(writer) {
-      writer.write("Text: ".concat(this.text, ", "));
+      var len = this.setLengthText(this.text);
+      writer.write("Text: ".concat(this.text, ", Length: ").concat(len, ", "));
     }
   }]);
 

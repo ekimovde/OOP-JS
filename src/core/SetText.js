@@ -7,8 +7,14 @@ class SetText {
     this.text = text;
   }
 
+  setLengthText(text) {
+    return text.length;
+  }
+
   out(writer) {
-    writer.write(`Text: ${this.text}, `);
+    let len = this.setLengthText(this.text);
+
+    writer.write(`Text: ${this.text}, Length: ${len}, `);
   }
 }
 
