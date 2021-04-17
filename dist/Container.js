@@ -38,7 +38,16 @@ var Container = /*#__PURE__*/function () {
       var c = this.array.length;
       writer.writeLine("Container contains: ".concat(c, ", elements!"));
       if (c > 0) for (var i = 0; i < c; i++) {
-        this.array[i].out(writer);
+        if (this.filter(this.array, i)) {
+          this.array[i].out(writer);
+        }
+      }
+    }
+  }, {
+    key: "filter",
+    value: function filter(array, i) {
+      if (Object.keys(array[i])[0] === "replacement") {
+        return true;
       }
     }
   }, {
