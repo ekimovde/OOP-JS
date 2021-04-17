@@ -2,6 +2,8 @@
 
 var _inFunc = require("./core/inFunc");
 
+var _compare = require("./utils/compare");
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -40,6 +42,19 @@ var Container = /*#__PURE__*/function () {
       if (c > 0) for (var i = 0; i < c; i++) {
         this.array[i].out(writer);
       }
+    }
+  }, {
+    key: "sort",
+    value: function sort() {
+      var c = this.array.length;
+      var setText = new SetText();
+      this.array.sort(function (a, b) {
+        if ((0, _compare.compare)(setText, a.text, b.text)) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });
     }
   }, {
     key: "clear",
