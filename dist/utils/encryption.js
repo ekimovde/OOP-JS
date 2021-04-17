@@ -7,7 +7,7 @@ var arr_EN = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 exports.replaceFunc = function (tmp) {
   var text = tmp[1].split("");
-  var replaceText = tmp[2].split("").join("");
+  var replaceText = tmp[3].split("").join("");
   var replacement = [];
 
   for (var i = 0; i < text.length; i++) {
@@ -24,7 +24,7 @@ exports.replaceFunc = function (tmp) {
 exports.shiftFunc = function (tmp) {
   var text = tmp[1].split("");
   var strEncoded = "";
-  var shift = +tmp[2];
+  var shift = +tmp[3];
 
   for (var i = 0; i < text.length; i++) {
     if (arr_ru.indexOf(text[i]) !== -1) {

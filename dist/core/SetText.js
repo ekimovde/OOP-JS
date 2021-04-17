@@ -11,6 +11,7 @@ var SetText = /*#__PURE__*/function () {
     _classCallCheck(this, SetText);
 
     this.text;
+    this.name;
   }
 
   _createClass(SetText, [{
@@ -19,15 +20,14 @@ var SetText = /*#__PURE__*/function () {
       this.text = text;
     }
   }, {
-    key: "setLengthText",
-    value: function setLengthText(text) {
-      return text.length;
+    key: "setName",
+    value: function setName(name) {
+      this.name = name;
     }
   }, {
     key: "out",
     value: function out(writer) {
-      var len = this.setLengthText(this.text);
-      writer.write("Text: ".concat(this.text, ", Length: ").concat(len, ", "));
+      writer.write("Text: ".concat(this.text, ", Name: ").concat(this.name, ", "));
     }
   }]);
 

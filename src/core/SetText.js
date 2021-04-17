@@ -1,6 +1,7 @@
 class SetText {
   constructor() {
     this.text;
+    this.name;
   }
 
   setText(text) {
@@ -11,10 +12,14 @@ class SetText {
     return text.length;
   }
 
+  setName(name) {
+    this.name = name;
+  }
+
   out(writer) {
     let len = this.setLengthText(this.text);
 
-    writer.write(`Text: ${this.text}, Length: ${len}, `);
+    writer.write(`Text: ${this.text}, Name: ${this.name}, Length: ${len}, `);
   }
 }
 

@@ -18,6 +18,7 @@ var inFunc = function inFunc(tmp, setText, array) {
       replacement["in"](tmp.toString().split(" "));
       setText = replacement;
       setText.setText(tmp.split(" ")[1].replace(/\r/g, ""));
+      setText.setName(tmp.split(" ")[2].replace(/\r/g, ""));
       array.push(replacement);
       break;
 
@@ -26,6 +27,7 @@ var inFunc = function inFunc(tmp, setText, array) {
       shift["in"](tmp.toString().split(" "));
       setText = shift;
       setText.setText(tmp.split(" ")[1]);
+      setText.setName(tmp.split(" ")[2]);
       array.push(shift);
       break;
 
