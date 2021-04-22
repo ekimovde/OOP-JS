@@ -19,8 +19,8 @@ export const inFunc = (tmp, setText, array) => {
       shift.in(tmp.toString().split(" "));
 
       setText = shift;
-      setText.setText(tmp.split(" ")[1]);
-      setText.setName(tmp.split(" ")[3]);
+      setText.setText(tmp.split(" ")[1].replace(/\r/g, ""));
+      setText.setName(tmp.split(" ")[3].replace(/\r/g, ""));
       array.push(shift);
 
       break;
@@ -30,7 +30,7 @@ export const inFunc = (tmp, setText, array) => {
 
       setText = replaceNumber;
       setText.setText(tmp.split(" ")[1].replace(/\r/g, ""));
-      setText.setName(tmp.split(" ")[3]);
+      setText.setName(tmp.split(" ")[3].replace(/\r/g, ""));
       array.push(replaceNumber);
 
       break;

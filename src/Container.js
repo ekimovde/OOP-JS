@@ -28,6 +28,17 @@ class Container {
 
     if (c > 0)
       for (let i = 0; i < c; i++) {
+        this.array[i].out(writer);
+      }
+  }
+
+  outReplacement(writer) {
+    let c = this.array.length;
+
+    writer.writeLine(`Container contains: ${c}, elements!`);
+
+    if (c > 0)
+      for (let i = 0; i < c; i++) {
         if (this.filter(this.array, i)) {
           this.array[i].out(writer);
         }

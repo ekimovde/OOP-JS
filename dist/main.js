@@ -13,8 +13,10 @@ function main() {
   var container = new Container();
   var reader = new Reader("in.txt");
   container["in"](reader);
+  container.out(writer);
   container.sort();
   container.out(writer);
+  container.outReplacement(writer);
   container.clear();
   container.out(writer);
   writer.writeLine("Stop!");
