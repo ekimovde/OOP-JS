@@ -1,5 +1,10 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.main = main;
+
 var Container = require("./Container");
 
 var Reader = require("./Reader");
@@ -21,5 +26,3 @@ function main() {
   console.log("Stop");
   writer.save();
 }
-
-main();

@@ -2,7 +2,7 @@ let Container = require("./Container");
 let Reader = require("./Reader");
 let Writer = require("./Writer");
 
-function main() {
+export function main() {
   console.log("Start");
 
   let writer = new Writer("out.txt");
@@ -24,5 +24,3 @@ function main() {
 
   writer.save();
 }
-
-main();
