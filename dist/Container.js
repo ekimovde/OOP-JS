@@ -4,6 +4,8 @@ var _inFunc = require("./core/inFunc");
 
 var _compare = require("./utils/compare");
 
+var _validate = require("./utils/validate");
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -25,7 +27,12 @@ var Container = /*#__PURE__*/function () {
       while (!reader.fileEmpty()) {
         var tmp = reader.readLine();
         var setText = new SetText();
-        (0, _inFunc.inFunc)(tmp, setText, this.array);
+
+        if ((0, _validate.validate)(tmp)) {
+          (0, _inFunc.inFunc)(tmp, setText, this.array);
+        } else {
+          console.log("Ошибка во входном файле!");
+        }
       }
     }
   }, {

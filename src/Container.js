@@ -1,6 +1,7 @@
 let SetText = require("./core/SetText");
 import { inFunc } from "./core/inFunc";
 import { compare } from "./utils/compare";
+import { validate } from "./utils/validate";
 
 class Container {
   constructor() {
@@ -12,7 +13,11 @@ class Container {
       let tmp = reader.readLine();
       let setText = new SetText();
 
-      inFunc(tmp, setText, this.array);
+      if (validate(tmp)) {
+        inFunc(tmp, setText, this.array);
+      } else {
+        console.log("Ошибка во входном файле!");
+      }
     }
   }
 
