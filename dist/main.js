@@ -17,12 +17,19 @@ function main() {
   writer.writeLine("Start!");
   var container = new Container();
   var reader = new Reader("in.txt");
-  container["in"](reader);
-  container.sort();
-  container.out(writer);
-  container.clear();
-  container.out(writer);
-  writer.writeLine("Stop!");
-  console.log("Stop");
-  writer.save();
+
+  try {
+    container["in"](reader);
+    container.sort();
+    container.out(writer);
+    container.clear();
+    container.out(writer);
+    writer.writeLine("Stop!");
+    console.log("Stop");
+    writer.save();
+  } catch (error) {
+    console.log(error);
+  }
 }
+
+main();

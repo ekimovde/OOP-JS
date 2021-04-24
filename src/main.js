@@ -12,15 +12,21 @@ export function main() {
   let container = new Container();
   let reader = new Reader("in.txt");
 
-  container.in(reader);
-  container.sort();
-  container.out(writer);
-  container.clear();
-  container.out(writer);
+  try {
+    container.in(reader);
+    container.sort();
+    container.out(writer);
+    container.clear();
+    container.out(writer);
 
-  writer.writeLine("Stop!");
+    writer.writeLine("Stop!");
 
-  console.log("Stop");
+    console.log("Stop");
 
-  writer.save();
+    writer.save();
+  } catch (error) {
+    console.log(error);
+  }
 }
+
+main();
