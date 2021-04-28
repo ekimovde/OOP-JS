@@ -28,5 +28,69 @@ Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: x
 Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
 Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
 Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
+MultiMethod
+Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
+Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
+Are Shift and Replacement
+Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
+Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
+Are Replacement and Shift
+Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
+Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
+Are Replacement and Shift
+Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
+Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
+Are Shift and Replacement
+Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
+Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
+Are Replacement and Shift
+Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
+Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
+Are Replacement and Shift
+Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
+Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
+Are Replacement and Shift
+Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
+Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
+Are Replacement and Shift
+Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
+Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
+Are Shift and Replacement
+Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
+Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
+Are Replacement and Shift
+Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
+Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
+Are Replacement and Shift
+Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
+Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
+Are Replacement and Shift
+Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
+Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
+Are Shift and Replacement
+Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
+Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
+Are Replacement and Shift
+Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
+Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
+Are Replacement and Shift
+Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
+Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
+Are Shift and Replacement
+Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
+Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
+Are Replacement and Shift
+Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
+Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
+Are Replacement and Shift
+Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
+Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
+Are Replacement and Shift
+Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
+Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
+Are Replacement and Shift
+Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
+Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
+Are Replacement and Shift
 Container contains: 0, elements!
 Stop!

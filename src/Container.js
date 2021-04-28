@@ -69,6 +69,17 @@ class Container {
     }
   }
 
+  multiMethod(writer) {
+    let c = this.array.length;
+    writer.writeLine("MultiMethod");
+
+    for (let i = 0; i < c - 1; i++) {
+      for (let j = i + 1; j < c; j++) {
+        this.array[i].multiMethod(this.array[j], writer);
+      }
+    }
+  }
+
   clear() {
     this.array = [];
   }

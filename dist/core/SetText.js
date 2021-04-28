@@ -35,6 +35,9 @@ var SetText = /*#__PURE__*/function () {
       var len = this.setLengthText(this.text);
       writer.write("Text: ".concat(this.text, ", Name: ").concat(this.name, ", Length: ").concat(len, ", "));
     }
+  }, {
+    key: "multiMethod",
+    value: function multiMethod() {}
   }]);
 
   return SetText;

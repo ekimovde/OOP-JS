@@ -21,6 +21,8 @@ class SetText {
 
     writer.write(`Text: ${this.text}, Name: ${this.name}, Length: ${len}, `);
   }
+
+  multiMethod() {}
 }
 
 module.exports = SetText;

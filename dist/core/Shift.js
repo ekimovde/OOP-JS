@@ -64,6 +64,36 @@ var Shift = /*#__PURE__*/function (_SetText) {
 
       writer.writeLine("Shift: ".concat(this.shift, ", DecodedText: ").concat(this.decodedText));
     }
+  }, {
+    key: "multiMethod",
+    value: function multiMethod(array, writer) {
+      switch (Object.keys(array)[0]) {
+        case "replacement":
+          this.replaceMM(array, writer);
+          break;
+
+        case "shift":
+          this.shiftMM(array, writer);
+          break;
+
+        default:
+          return 0;
+      }
+    }
+  }, {
+    key: "replaceMM",
+    value: function replaceMM(array, writer) {
+      this.out(writer);
+      array.out(writer);
+      writer.writeLine("Are Replacement and Shift");
+    }
+  }, {
+    key: "shiftMM",
+    value: function shiftMM(array, writer) {
+      this.out(writer);
+      array.out(writer);
+      writer.writeLine("Are Shift and Replacement");
+    }
   }]);
 
   return Shift;

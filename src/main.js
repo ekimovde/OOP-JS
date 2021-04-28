@@ -18,6 +18,7 @@ export function main() {
     container.sort();
     container.out(writer);
     container.outReplacement(writer);
+    container.multiMethod(writer);
     container.clear();
     container.out(writer);
 

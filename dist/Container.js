@@ -82,6 +82,18 @@ var Container = /*#__PURE__*/function () {
       }
     }
   }, {
+    key: "multiMethod",
+    value: function multiMethod(writer) {
+      var c = this.array.length;
+      writer.writeLine("MultiMethod");
+
+      for (var i = 0; i < c - 1; i++) {
+        for (var j = i + 1; j < c; j++) {
+          this.array[i].multiMethod(this.array[j], writer);
+        }
+      }
+    }
+  }, {
     key: "clear",
     value: function clear() {
       this.array = [];
