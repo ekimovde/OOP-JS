@@ -39,13 +39,13 @@ class Replacement extends SetText {
   replaceMM(array, writer) {
     this.out(writer);
     array.out(writer);
-    writer.writeLine("Are Replacement and Shift");
+    writer.writeLine("Are Replacement and Replacement");
   }
 
   shiftMM(array, writer) {
     this.out(writer);
     array.out(writer);
-    writer.writeLine("Are Shift and Replacement");
+    writer.writeLine("Are Replacement and Shift");
   }
 }
 

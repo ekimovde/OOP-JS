@@ -1,96 +1,28 @@
 Start!
-Container contains: 11, elements!
+Container contains: 5, elements!
 Text: гl, Name: Denis, Length: 2, ReplaceNumber: [г->5]-[l->3], DecodedText: 53
 Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
 Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
 Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
 Text: Ж, Name: Cat, Length: 1, ReplaceNumber: [Ж->1], DecodedText: 1
-Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
-Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
-Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
-Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
-Text: abc, Name: 5, Length: 3, ReplaceNumber: [a->1]-[b->2]-[c->3], DecodedText: 123
-Text: abc, Name: 6, Length: 3, ReplaceNumber: [a->3]-[b->2]-[c->1], DecodedText: 321
-Container contains: 11, elements!
-Text: abc, Name: 6, Length: 3, ReplaceNumber: [a->3]-[b->2]-[c->1], DecodedText: 321
-Text: abc, Name: 5, Length: 3, ReplaceNumber: [a->1]-[b->2]-[c->3], DecodedText: 123
-Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
-Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
-Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
-Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
+Container contains: 5, elements!
 Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
 Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
 Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
 Text: гl, Name: Denis, Length: 2, ReplaceNumber: [г->5]-[l->3], DecodedText: 53
 Text: Ж, Name: Cat, Length: 1, ReplaceNumber: [Ж->1], DecodedText: 1
-Container contains: 11, elements!
-Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
-Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
+Container contains: 5, elements!
 Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
 Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
 MultiMethod
-Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
-Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
+Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
+Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
 Are Shift and Replacement
-Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
-Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
-Are Replacement and Shift
-Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
-Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
-Are Replacement and Shift
-Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
 Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
+Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
 Are Shift and Replacement
-Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
-Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
-Are Replacement and Shift
-Text: abc, Name: 4, Length: 3, Shift: 10, DecodedText: klm
-Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
-Are Replacement and Shift
-Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
-Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
-Are Replacement and Shift
-Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
-Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
-Are Replacement and Shift
-Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
-Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
-Are Shift and Replacement
-Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
-Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
-Are Replacement and Shift
-Text: abc, Name: 3, Length: 3, Shift: 2, DecodedText: cde
-Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
-Are Replacement and Shift
-Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
-Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
-Are Replacement and Shift
-Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
-Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
-Are Shift and Replacement
-Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
-Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
-Are Replacement and Shift
-Text: abc, Name: 2, Length: 3, Replacement: [a->x]-[b->y]-[c->z], DecodedText: xyz
-Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
-Are Replacement and Shift
-Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
-Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
-Are Shift and Replacement
-Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
-Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
-Are Replacement and Shift
-Text: abc, Name: 1, Length: 3, Replacement: [a->c]-[b->b]-[c->a], DecodedText: cba
-Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
-Are Replacement and Shift
-Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
-Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
-Are Replacement and Shift
-Text: Кот, Name: Vadim, Length: 3, Shift: 2, DecodedText: Мрф
-Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
-Are Replacement and Shift
 Text: Коd, Name: Dog, Length: 3, Replacement: [К->Д]-[о->о]-[d->d], DecodedText: Доd
 Text: Аб, Name: Vlad, Length: 2, Replacement: [А->б]-[б->а], DecodedText: ба
-Are Replacement and Shift
+Are Replacement and Replacement
 Container contains: 0, elements!
 Stop!

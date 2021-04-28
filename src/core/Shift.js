@@ -36,13 +36,13 @@ class Shift extends SetText {
   replaceMM(array, writer) {
     this.out(writer);
     array.out(writer);
-    writer.writeLine("Are Replacement and Shift");
+    writer.writeLine("Are Shift and Replacement");
   }
 
   shiftMM(array, writer) {
     this.out(writer);
     array.out(writer);
-    writer.writeLine("Are Shift and Replacement");
+    writer.writeLine("Are Shift and Shift");
   }
 }
 
