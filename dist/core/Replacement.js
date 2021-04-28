@@ -76,6 +76,9 @@ var Replacement = /*#__PURE__*/function (_SetText) {
           this.shiftMM(array, writer);
           break;
 
+        case "replaceNumber":
+          this.replaceNumberMM(array, writer);
+
         default:
           return 0;
       }
@@ -85,14 +88,21 @@ var Replacement = /*#__PURE__*/function (_SetText) {
     value: function replaceMM(array, writer) {
       this.out(writer);
       array.out(writer);
-      writer.writeLine("Are Replacement and Shift");
+      writer.writeLine("Are Replacement and Replacement");
     }
   }, {
     key: "shiftMM",
     value: function shiftMM(array, writer) {
       this.out(writer);
       array.out(writer);
-      writer.writeLine("Are Shift and Replacement");
+      writer.writeLine("Are Replacement and Shift");
+    }
+  }, {
+    key: "replaceNumberMM",
+    value: function replaceNumberMM(array, writer) {
+      this.out(writer);
+      array.out(writer);
+      writer.writeLine("Are Replacement and ReplaceNumber");
     }
   }]);
 
