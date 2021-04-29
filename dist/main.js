@@ -16,9 +16,9 @@ function main() {
   var writer = new Writer("out.txt");
   writer.writeLine("Start!");
   var container = new Container();
-  var reader = new Reader("in.txt");
 
   try {
+    var reader = new Reader("in.txt");
     container["in"](reader);
     container.sort();
     container.out(writer);
@@ -28,7 +28,7 @@ function main() {
     console.log("Stop");
     writer.save();
   } catch (error) {
-    console.log(error);
+    console.log("Файла нет!");
   }
 }
 

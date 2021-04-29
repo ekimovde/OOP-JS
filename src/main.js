@@ -10,9 +10,10 @@ export function main() {
   writer.writeLine("Start!");
 
   let container = new Container();
-  let reader = new Reader("in.txt");
 
   try {
+    let reader = new Reader("in.txt");
+
     container.in(reader);
     container.sort();
     container.out(writer);
@@ -25,7 +26,7 @@ export function main() {
 
     writer.save();
   } catch (error) {
-    console.log(error);
+    console.log("Файла нет!");
   }
 }
 
