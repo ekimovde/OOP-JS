@@ -16,17 +16,22 @@ function main() {
   var writer = new Writer("out.txt");
   writer.writeLine("Start!");
   var container = new Container();
-  var reader = new Reader("in.txt");
-  container["in"](reader);
-  container.out(writer);
-  container.sort();
-  container.out(writer);
-  container.outReplacement(writer);
-  container.clear();
-  container.out(writer);
-  writer.writeLine("Stop!");
-  console.log("Stop");
-  writer.save();
+
+  try {
+    var reader = new Reader("in.txt");
+    container["in"](reader);
+    container.out(writer);
+    container.sort();
+    container.out(writer);
+    container.outReplacement(writer);
+    container.clear();
+    container.out(writer);
+    writer.writeLine("Stop!");
+    console.log("Stop");
+    writer.save();
+  } catch (error) {
+    console.log("Файла нет!");
+  }
 }
 
 main();
