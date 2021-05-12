@@ -21,11 +21,6 @@ class Container {
     }
   }
 
-  getArray(tmp) {
-    this.array.push(tmp);
-    return this.array;
-  }
-
   out(writer) {
     let c = this.array.length;
 

@@ -36,12 +36,6 @@ var Container = /*#__PURE__*/function () {
       }
     }
   }, {
-    key: "getArray",
-    value: function getArray(tmp) {
-      this.array.push(tmp);
-      return this.array;
-    }
-  }, {
     key: "out",
     value: function out(writer) {
       var c = this.array.length;
