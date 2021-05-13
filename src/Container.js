@@ -19,6 +19,8 @@ class Container {
         console.log("Ошибка во входном файле!");
       }
     }
+
+    return this.array;
   }
 
   out(writer) {
@@ -61,11 +63,16 @@ class Container {
   filter(array, i) {
     if (Object.keys(array[i])[0] === "replacement") {
       return true;
+    } else {
+      return false;
     }
   }
 
-  clear() {
-    this.array = [];
+  clear(array) {
+    array = [];
+    this.array = array;
+
+    return this.array;
   }
 }
 

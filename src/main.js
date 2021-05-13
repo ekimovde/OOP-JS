@@ -14,12 +14,12 @@ export function main() {
   try {
     let reader = new Reader("in.txt");
 
-    container.in(reader);
+    let array = container.in(reader);
     container.out(writer);
     container.sort();
     container.out(writer);
     container.outReplacement(writer);
-    container.clear();
+    container.clear(container.array);
     container.out(writer);
 
     writer.writeLine("Stop!");

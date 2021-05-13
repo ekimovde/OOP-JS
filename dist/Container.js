@@ -34,6 +34,8 @@ var Container = /*#__PURE__*/function () {
           console.log("Ошибка во входном файле!");
         }
       }
+
+      return this.array;
     }
   }, {
     key: "out",
@@ -73,12 +75,16 @@ var Container = /*#__PURE__*/function () {
     value: function filter(array, i) {
       if (Object.keys(array[i])[0] === "replacement") {
         return true;
+      } else {
+        return false;
       }
     }
   }, {
     key: "clear",
-    value: function clear() {
-      this.array = [];
+    value: function clear(array) {
+      array = [];
+      this.array = array;
+      return this.array;
     }
   }]);
 
