@@ -5,19 +5,18 @@ let Writer = require("./Writer");
 export function main() {
   console.log("Start");
 
-  let writer = new Writer("out.txt");
-
-  writer.writeLine("Start!");
-
-  let container = new Container();
-
   try {
     let reader = new Reader("in.txt");
+    let writer = new Writer("out.txt");
+
+    writer.writeLine("Start!");
+
+    let container = new Container();
 
     let array = container.in(reader);
-    container.out(writer);
+    let arrOut = container.out(writer);
     container.sort();
-    container.out(writer);
+    arrOut = container.out(writer);
     container.outReplacement(writer);
     container.clear(container.array);
     container.out(writer);
@@ -28,6 +27,7 @@ export function main() {
 
     writer.save();
   } catch (error) {
+    console.log(error);
     console.log("Файла нет!");
   }
 }

@@ -41,10 +41,12 @@ var Container = /*#__PURE__*/function () {
     key: "out",
     value: function out(writer) {
       var c = this.array.length;
+      var array = [];
       writer.writeLine("Container contains: ".concat(c, ", elements!"));
       if (c > 0) for (var i = 0; i < c; i++) {
-        this.array[i].out(writer);
+        array.push(this.array[i].out(writer));
       }
+      return array;
     }
   }, {
     key: "outReplacement",

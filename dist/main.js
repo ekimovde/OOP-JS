@@ -13,16 +13,16 @@ var Writer = require("./Writer");
 
 function main() {
   console.log("Start");
-  var writer = new Writer("out.txt");
-  writer.writeLine("Start!");
-  var container = new Container();
 
   try {
     var reader = new Reader("in.txt");
+    var writer = new Writer("out.txt");
+    writer.writeLine("Start!");
+    var container = new Container();
     var array = container["in"](reader);
-    container.out(writer);
+    var arrOut = container.out(writer);
     container.sort();
-    container.out(writer);
+    arrOut = container.out(writer);
     container.outReplacement(writer);
     container.clear(container.array);
     container.out(writer);
@@ -30,6 +30,7 @@ function main() {
     console.log("Stop");
     writer.save();
   } catch (error) {
+    console.log(error);
     console.log("Файла нет!");
   }
 }

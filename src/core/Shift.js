@@ -18,6 +18,8 @@ class Shift extends SetText {
   out(writer) {
     super.out(writer);
     writer.writeLine(`Shift: ${this.shift}, DecodedText: ${this.decodedText}`);
+
+    return `Shift: ${this.shift}, DecodedText: ${this.decodedText}`;
   }
 }
 

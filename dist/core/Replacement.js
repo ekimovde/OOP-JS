@@ -63,6 +63,7 @@ var Replacement = /*#__PURE__*/function (_SetText) {
       _get(_getPrototypeOf(Replacement.prototype), "out", this).call(this, writer);
 
       writer.writeLine("Replacement: ".concat(this.replacement, ", DecodedText: ").concat(this.decodedText));
+      return "Replacement: ".concat(this.replacement, ", DecodedText: ").concat(this.decodedText);
     }
   }]);
 

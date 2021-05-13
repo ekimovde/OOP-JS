@@ -63,6 +63,7 @@ var Shift = /*#__PURE__*/function (_SetText) {
       _get(_getPrototypeOf(Shift.prototype), "out", this).call(this, writer);
 
       writer.writeLine("Shift: ".concat(this.shift, ", DecodedText: ").concat(this.decodedText));
+      return "Shift: ".concat(this.shift, ", DecodedText: ").concat(this.decodedText);
     }
   }]);
 

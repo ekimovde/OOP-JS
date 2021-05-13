@@ -21,6 +21,8 @@ class Replacement extends SetText {
     writer.writeLine(
       `Replacement: ${this.replacement}, DecodedText: ${this.decodedText}`
     );
+
+    return `Replacement: ${this.replacement}, DecodedText: ${this.decodedText}`;
   }
 }
 

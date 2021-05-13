@@ -25,13 +25,15 @@ class Container {
 
   out(writer) {
     let c = this.array.length;
-
+    let array = [];
     writer.writeLine(`Container contains: ${c}, elements!`);
 
     if (c > 0)
       for (let i = 0; i < c; i++) {
-        this.array[i].out(writer);
+        array.push(this.array[i].out(writer));
       }
+
+    return array;
   }
 
   outReplacement(writer) {
