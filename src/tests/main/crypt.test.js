@@ -2,7 +2,7 @@ const {
   replaceFunc,
   shiftFunc,
   replaceNumberFunc,
-} = require("../../../utils/encryption");
+} = require("../../utils/encryption");
 
 describe("Encryption replaceFunc:", () => {
   let array;
