@@ -23,17 +23,15 @@ class Container {
     return this.array;
   }
 
-  out(writer) {
-    let c = this.array.length;
-    let array = [];
-    writer.writeLine(`Container contains: ${c}, elements!`);
+  out(writer, array) {
+    let c = array.length;
+    let arrayData = [];
+    // writer.writeLine(`Container contains: ${c}, elements!`);
 
     if (c > 0)
       for (let i = 0; i < c; i++) {
-        array.push(this.array[i].out(writer));
+        arrayData.push(array[i].out(writer));
       }
-
-    return array;
   }
 
   outReplacement(writer) {

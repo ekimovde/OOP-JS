@@ -1,34 +1,45 @@
-const Container = require("../../Container");
+import fs from "fs";
+let Container = require("../../Container");
+let Reader = require("../../Reader");
 let Writer = require("../../Writer");
 
 describe("In function:", () => {
+  let writer;
+  let reader;
   let container = new Container();
-  let writer = new Writer("out.txt");
+  let dataOut = [
+    {
+      text: "гl",
+      replaceNumber: "[г->5]-[l->3]",
+      decodedText: "53",
+      name: "Denis",
+    },
+    {
+      text: "Аб",
+      replacement: "[А->б]-[б->а]",
+      decodedText: "ба",
+      name: "Vlad",
+    },
+    { text: "Кот", shift: 2, decodedText: "Мрф", name: "Vadim" },
+  ];
 
-  afterAll(() => {
-    container = new Container();
-  });
-
-  test("Should by defined:", () => {
-    expect(container.out(writer)).toBeDefined();
-    expect(container.out(writer)).not.toBeUndefined();
+  beforeEach(() => {
+    writer = new Writer("out.txt");
   });
 
   test("Should check the input function:", () => {
-    let result = [
-      "ReplaceNumber: [г->5]-[l->3], DecodedText: 53",
-      "Replacement: [А->б]-[б->а], DecodedText: ба",
-      "Shift: 2, DecodedText: Мрф",
-    ];
+    let result =
+      "Text: гl, Name: Denis, Length: 2, ReplaceNumber: [г->5]-[l->3], DecodedText: 53";
+    reader = new Reader("in.txt");
+    let array = container.in(reader);
+    container.out(writer, array);
+    writer.save();
 
-    // expect(container.out(writer)).toEqual(result);
-  });
+    let readerOut = new Reader("out.txt");
 
-  test("Should check for the content:", () => {
-    expect(container.out(writer)).not.toContain();
-    expect(container.out(writer)).not.toContain(null);
-    expect(container.out(writer)).not.toContain(false);
-    expect(container.out(writer)).not.toContain(true);
-    expect(container.out(writer)).not.toContain("");
+    let arrayOut = reader.readLine();
+    console.log(arrayOut);
+
+    // expect(fs.readFileSync('out.txt').toString()).toEqual(result);
   });
 });

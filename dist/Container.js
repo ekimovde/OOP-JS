@@ -39,14 +39,13 @@ var Container = /*#__PURE__*/function () {
     }
   }, {
     key: "out",
-    value: function out(writer) {
-      var c = this.array.length;
-      var array = [];
-      writer.writeLine("Container contains: ".concat(c, ", elements!"));
+    value: function out(writer, array) {
+      var c = array.length;
+      var arrayData = []; // writer.writeLine(`Container contains: ${c}, elements!`);
+
       if (c > 0) for (var i = 0; i < c; i++) {
-        array.push(this.array[i].out(writer));
+        arrayData.push(array[i].out(writer));
       }
-      return array;
     }
   }, {
     key: "outReplacement",

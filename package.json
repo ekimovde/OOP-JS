@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "jest src/tests/main",
+    "test": "jest src/tests/main/out.test.js",
     "start": "babel src --out-dir dist",
     "build": "node src/main.js"
   },

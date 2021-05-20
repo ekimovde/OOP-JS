@@ -16,7 +16,7 @@ export function main() {
     let array = container.in(reader);
     let arrOut = container.out(writer);
     container.sort();
-    arrOut = container.out(writer);
+    container.out(writer);
     container.outReplacement(writer);
     container.clear(container.array);
     container.out(writer);
